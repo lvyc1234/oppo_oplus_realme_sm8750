@@ -450,9 +450,9 @@ jobs:
           # 添加 MACVLAN / IPVLAN 以及命名空间等容器与网络虚拟化支持
           echo "CONFIG_MACVLAN=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_IPVLAN=y" >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_USER_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_CGROUP_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_DEVPTS_MULTIPLE_INSTANCES=y" >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_USER_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_CGROUP_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_DEVPTS_MULTIPLE_INSTANCES=y" >> ./common/arch/arm64/configs/gki_defconfig
 
       - name: 启用网络功能增强优化配置
         if: inputs.better_net
