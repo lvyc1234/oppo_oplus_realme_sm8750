@@ -452,7 +452,7 @@ jobs:
           
           echo "CONFIG_NET_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_IPVLAN=y" >> ./common/arch/arm64/configs/gki_defconfig
-          # echo "CONFIG_IPVLAN_L3S=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_IPVLAN_L3S=y" >> ./common/arch/arm64/configs/gki_defconfig
 
           echo "CONFIG_USER_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_CGROUP_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
