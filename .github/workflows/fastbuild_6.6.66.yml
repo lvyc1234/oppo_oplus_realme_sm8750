@@ -449,7 +449,11 @@ jobs:
 
           # 添加 MACVLAN / IPVLAN 以及命名空间等容器与网络虚拟化支持
           echo "CONFIG_MACVLAN=y" >> ./common/arch/arm64/configs/gki_defconfig
-          # echo "CONFIG_IPVLAN=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_USER_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_CGROUP_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_DEVPTS_MULTIPLE_INSTANCES=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_NET_NS=y"                 >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_IPVLAN=y"                 >> ./common/arch/arm64/configs/gki_defconfig
           # echo "CONFIG_IPVLAN_L3S=y"             >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_VETH=y"                   >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_NETFILTER_XT_MATCH_OWNER=y" >> ./common/arch/arm64/configs/gki_defconfig
