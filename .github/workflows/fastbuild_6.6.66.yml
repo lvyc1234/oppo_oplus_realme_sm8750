@@ -456,13 +456,13 @@ jobs:
           echo "CONFIG_CGROUP_NS=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_DEVPTS_MULTIPLE_INSTANCES=y" >> ./common/arch/arm64/configs/gki_defconfig
 
-          echo "CONFIG_VETH=y"                   >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_NETFILTER_XT_MATCH_OWNER=y" >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_NETFILTER_XT_MATCH_CGROUP=y" >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_CGROUP_NET_CLASSID=y"      >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_NET_CLS_CGROUP=y"          >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_NETPRIO_CGROUP=y"          >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_NET_SCH_INGRESS=y"         >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_VETH=y"                   >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_NETFILTER_XT_MATCH_OWNER=y" >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_NETFILTER_XT_MATCH_CGROUP=y" >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_CGROUP_NET_CLASSID=y"      >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_NET_CLS_CGROUP=y"          >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_NETPRIO_CGROUP=y"          >> ./common/arch/arm64/configs/gki_defconfig
+          # echo "CONFIG_NET_SCH_INGRESS=y"         >> ./common/arch/arm64/configs/gki_defconfig
 
       - name: 启用网络功能增强优化配置
         if: inputs.better_net
